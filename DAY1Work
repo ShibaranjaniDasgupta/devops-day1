@@ -1,0 +1,165 @@
+Devops@CME604-24 MINGW64 ~
+$ cd D:
+
+Devops@CME604-24 MINGW64 /d
+$ cd 272_Shibaranjani
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani
+$ mkdir devopsGitDay1
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani
+$ cd devopsGitDay1
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1
+$ git clone https://github.com/ShibaranjaniDasgupta/devops-day1.git
+Cloning into 'devops-day1'...
+warning: You appear to have cloned an empty repository.
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1
+$ ls
+devops-day1/
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1
+$ cd devops-day1
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git add *
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day1Textfile.txt
+
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git config user.name "ShibaranjaniDasgupta"
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git config user.email "nandini21dasgupta@gmail.com"
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git commit -m "committing first text file day1 devops lab"
+[main (root-commit) 74fa6a8] committing first text file day1 devops lab
+ 1 file changed, 3 insertions(+)
+ create mode 100644 day1Textfile.txt
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ShibaranjaniDasgupta/devops-day1.git
+ * [new branch]      main -> main
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1020 bytes | 72.00 KiB/s, done.
+From https://github.com/ShibaranjaniDasgupta/devops-day1
+   74fa6a8..31683ed  main       -> origin/main
+Updating 74fa6a8..31683ed
+Fast-forward
+ textfileinGit | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ ls
+day1Textfile.txt  textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git add *
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   day1Textfile.txt
+        new file:   day1Textfile2.txt
+
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git commit -m "2nd text file addition"
+[main 15d59ab] 2nd text file addition
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 day1Textfile2.txt
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 387 bytes | 387.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ShibaranjaniDasgupta/devops-day1.git
+   31683ed..15d59ab  main -> main
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ ls
+day1Textfile.txt  day1Textfile2.txt  textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git commit
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ ls
+day1Textfile.txt  day1Textfile2.txt  textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ ls
+day1Textfile.txt  day1Textfile2.txt  textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 966 bytes | 69.00 KiB/s, done.
+From https://github.com/ShibaranjaniDasgupta/devops-day1
+   15d59ab..88e2c7c  main       -> origin/main
+Updating 15d59ab..88e2c7c
+Fast-forward
+ textfile2inGit | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 textfile2inGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ ls
+day1Textfile.txt  day1Textfile2.txt  textfile2inGit  textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ ls
+day1Textfile.txt   textTobeDeleted2.txt  textfile2inGit
+day1Textfile2.txt  textTobedeleted1.txt  textfileinGit
+
+Devops@CME604-24 MINGW64 /d/272_Shibaranjani/devopsGitDay1/devops-day1 (main)
+$ git
